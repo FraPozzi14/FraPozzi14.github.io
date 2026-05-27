@@ -1,0 +1,17 @@
+<footer class="site-footer">
+    <p>© {{ site.time | date: '%Y' }} {{ site.title }}. Tutti i diritti riservati.</p>
+    <div class="social-links">
+        {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username}}">Github</a>
+        {% endif %}
+        {% if site.email %}
+        <a href="mailto:{{ site.email }}">Email</a>
+        {% endif %}
+        {% if site.instagram_username %}
+        <a href="https://instagram.com/{{ site.instagram_username }}">Instagram</a>
+        {% endif %}
+    </div>
+
+    <p> Creato con Jekyll e Github Pages. Utilizzo da AI</p>
+</footer>
+

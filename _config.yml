@@ -1,2 +1,15 @@
-title: FraPozzi14
-description: "Sito di FraPozzi14"
+title: frapozzi14
+description: "Sito di frapozzi14"
+
+url: "https://frapozzi14.github.io"
+baseurl: ""
+
+github_username: frapozzi14
+email: francesco.pozzi@issgreppi.it
+instagram_username: il_pablo_69
+
+markdown: kramdown
+plugins: []
+exclude:
+  - README.md
+
