@@ -2,16 +2,12 @@
 title: Home
 layout: default
 ---
-# Arhivio di Francesco Pozzi
-{: #hero}
-Archivio
+<div class="hero">
+  <h1>Archivio di Francesco Pozzi</h1>
+  <p class="lead">Sviluppatore, studente, appassionato di tecnologia.</p>
+  <a href="{{ '/progetti' | relative_url }}" class="btn">Vedi progetti</a>
+</div>
 
-## Sezione Progetti
-{: #progetti}
-
-### CityClimateCompanion
-Applicazione meteo. Creata con .NET MAUI. API open-meteo. SQLite as Database. OpenCode as AI agents.
-<[CityClimateCompanion](https://github.com/GreppiLabs/maui-app-FraPozzi14/releases/tag/v1.0.1)>
 
 ### Sito Personale
 Sito in cui racchiudo tutto ciò che mi interessa.
