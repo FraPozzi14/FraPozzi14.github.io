@@ -5,6 +5,14 @@
 }
 
 :root {
+  [data-theme="light"]
+  {
+    --bg: #f1e1e1;
+  --panel: #f8f9fa;
+  --line: #e5e7eb;
+  --text: #1f2937;
+  --text-light: #6b7280;
+  }
     --bg: #121318;
     --panel: #1c1d24;
     --line: #2a2b31;
@@ -212,4 +220,24 @@ section h2::after {
   .menu-toggle:checked ~ .site-nav {
     display: block;
   }
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+  line-height: 1;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.theme-toggle:hover {
+  border-color: var(--accent);
 }
