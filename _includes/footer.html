@@ -1,17 +1,17 @@
 <footer class="site-footer">
-    <p>© {{ site.time | date: '%Y' }} {{ site.title }}. Tutti i diritti riservati.</p>
     <div class="social-links">
         {% if site.github_username %}
-        <a href="https://github.com/{{ site.github_username}}">Github</a>
+        <a href="https://github.com/{{ site.github_username}}" target="_blank" rel="noopener noreferrer">Github</a>
         {% endif %}
         {% if site.email %}
         <a href="mailto:{{ site.email }}">Email</a>
         {% endif %}
         {% if site.instagram_username %}
-        <a href="https://instagram.com/{{ site.instagram_username }}">Instagram</a>
+        <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer">Instagram</a>
         {% endif %}
     </div>
 
-    <p> Creato con Jekyll e Github Pages. Utilizzo da AI</p>
+    <p>© {{ site.time | date: '%Y' }} {{ site.title }}. Tutti i diritti riservati.</p>
+    <p> Creato con Jekyll e Github Pages. Utilizzo di AI</p>
 </footer>
 

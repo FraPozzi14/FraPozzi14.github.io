@@ -129,15 +129,35 @@ main {
 
 .site-footer {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem 2rem;
   border-top: 1px solid var(--line);
   color: var(--text-light);
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 .social-links {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: 0.5rem 0;
+  margin-bottom: 1.5rem;
+}
+.social-links a {
+  color: var(--text-light);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+.social-links a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+.copyright {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+.credits {
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
 
 section {
