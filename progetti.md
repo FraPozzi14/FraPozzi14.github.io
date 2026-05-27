@@ -1,13 +1,10 @@
 ---
-title: Home
+title: Progetti
 layout: default
 ---
-# Arhivio di Francesco Pozzi
-{: #hero}
-Archivio
 
-## Sezione Progetti
-{: #progetti}
+## Progetti
+Tutti i miei progetti
 
 ### CityClimateCompanion
 Applicazione meteo. Creata con .NET MAUI. API open-meteo. SQLite as Database. OpenCode as AI agents.
@@ -16,6 +13,3 @@ Applicazione meteo. Creata con .NET MAUI. API open-meteo. SQLite as Database. Op
 ### Sito Personale
 Sito in cui racchiudo tutto ciò che mi interessa.
 <[Mio Sito](https://frapozzi14.github.io)>
-
-
-
