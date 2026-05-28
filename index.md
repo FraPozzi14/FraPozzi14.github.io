@@ -6,7 +6,7 @@ layout: default
   <h1>Archivio di Francesco Pozzi</h1>
   <p class="lead">Primo obiettivo: creare una sezione con gli appunti più disparati.</p>
   <a href="{{ '/progetti' | relative_url }}" class="btn">Vedi Progetti</a>
-  <a href="{{ '/appunti' | realtive_url }}" class="btn">Appunti</a>
+  <a href="{{ '/appunti' | relative_url }}" class="btn">Appunti</a>
 </div>
 
 

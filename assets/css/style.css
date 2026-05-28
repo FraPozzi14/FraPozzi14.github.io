@@ -263,35 +263,43 @@ section h2::after {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--text-light);
-  margin-bottom: 1rem;
-  padding-left: 0.75rem;
-}
-/* Sidebar sinistra */
-.sidebar {
-  width: 220px;
-  flex-shrink: 0;
-  position: sticky;
-  top: 5rem;
-  align-self: flex-start;
-}
-.sidebar-title {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--text-light);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
   padding-left: 0.75rem;
 }
 .sidebar-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 .sidebar-classe {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: var(--accent);
-  margin-bottom: 0.5rem;
-  padding-left: 0.75rem;
+  margin-bottom: 0.25rem;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: var(--radius);
+  transition: background 0.2s;
+}
+.sidebar-classe::-webkit-details-marker {
+  display: none;
+}
+.sidebar-classe::before {
+  content: '▸';
+  display: inline-block;
+  font-size: 0.7rem;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+details[open] > .sidebar-classe::before {
+  transform: rotate(90deg);
+}
+.sidebar-classe:hover {
+  background: var(--panel);
 }
 .sidebar-nav {
   list-style: none;
@@ -349,8 +357,8 @@ section h2::after {
     position: static;
   }
   .sidebar-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.25rem;
   }
   .sidebar-nav a {
     padding: 0.4rem 0.75rem;

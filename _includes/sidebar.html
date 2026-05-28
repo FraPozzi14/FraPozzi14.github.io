@@ -1,8 +1,14 @@
 <aside class="sidebar">
   <h3 class="sidebar-title">Appunti</h3>
   {% for classe in site.data.materie %}
-    <div class="sidebar-group">
-      <h4 class="sidebar-classe">{{ classe.classe }}</h4>
+    {% assign is_open = false %}
+    {% for materia in classe.materie %}
+      {% if page.url == materia.url %}
+        {% assign is_open = true %}
+      {% endif %}
+    {% endfor %}
+    <details class="sidebar-group" {% if is_open %}open{% endif %}>
+      <summary class="sidebar-classe">{{ classe.classe }}</summary>
       <ul class="sidebar-nav">
         {% for materia in classe.materie %}
           <li>
@@ -12,6 +18,6 @@
           </li>
         {% endfor %}
       </ul>
-    </div>
+    </details>
   {% endfor %}
 </aside>
