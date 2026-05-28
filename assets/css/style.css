@@ -241,3 +241,92 @@ section h2::after {
 .theme-toggle:hover {
   border-color: var(--accent);
 }
+
+/* --- Appunti: layout a due colonne --- */
+.appunti-layout {
+  display: flex;
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+/* Sidebar sinistra */
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 5rem;
+  align-self: flex-start;
+}
+.sidebar-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  padding-left: 0.75rem;
+}
+.sidebar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.sidebar-nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  color: var(--text-light);
+  font-size: 0.95rem;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar-nav a:hover {
+  background: var(--panel);
+  color: var(--text);
+  text-decoration: none;
+}
+.sidebar-nav a.active {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+/* Contenuto principale */
+.appunti-content {
+  flex: 1;
+  min-width: 0;
+}
+.appunti-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+.appunti-content h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+/* Responsive: sidebar sopra il contenuto su mobile */
+@media (max-width: 768px) {
+  .appunti-layout {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .sidebar {
+    width: 100%;
+    position: static;
+  }
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sidebar-nav a {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}
