@@ -1,0 +1,17 @@
+<aside class="sidebar">
+  <h3 class="sidebar-title">Appunti</h3>
+  {% for classe in site.data.materie %}
+    <div class="sidebar-group">
+      <h4 class="sidebar-classe">{{ classe.classe }}</h4>
+      <ul class="sidebar-nav">
+        {% for materia in classe.materie %}
+          <li>
+            <a href="{{ materia.url | relative_url }}"{% if page.url == materia.url %} class="active"{% endif %}>
+              {{ materia.nome }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</aside>

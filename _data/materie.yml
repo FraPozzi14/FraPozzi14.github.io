@@ -1,0 +1,44 @@
+- classe: "prima"
+  materie:
+    - nome: matematica
+      url: /appunti/1/matematica
+    - nome: informatica
+      url: /appunti/1/informatica
+    - nome: italiano
+      url: /appunti/1/italiano
+
+- classe: "seconda"
+  materie:
+    - nome: matematica
+      url: /appunti/2/matematica
+    - nome: informatica
+      url: /appunti/2/informatica
+    - nome: italiano
+      url: /appunti/2/italiano
+  
+- classe: "terza"
+  materie:
+    - nome: matematica
+      url: /appunti/3/matematica
+    - nome: informatica
+      url: /appunti/3/informatica
+    - nome: italiano
+      url: /appunti/3/italiano
+
+- classe: "quarta"
+  materie:
+    - nome: matematica
+      url: /appunti/4/matematica
+    - nome: informatica
+      url: /appunti/4/informatica
+    - nome: italiano
+      url: /appunti/4/italiano
+
+- classe: "quinta"
+  materie:
+    - nome: matematica
+      url: /appunti/5/matematica
+    - nome: informatica
+      url: /appunti/5/informatica
+    - nome: italiano
+      url: /appunti/5/italiano

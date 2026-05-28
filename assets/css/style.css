@@ -266,6 +266,33 @@ section h2::after {
   margin-bottom: 1rem;
   padding-left: 0.75rem;
 }
+/* Sidebar sinistra */
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 5rem;
+  align-self: flex-start;
+}
+.sidebar-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+  padding-left: 0.75rem;
+}
+.sidebar-group {
+  margin-bottom: 1.5rem;
+}
+.sidebar-classe {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  padding-left: 0.75rem;
+}
 .sidebar-nav {
   list-style: none;
   display: flex;
