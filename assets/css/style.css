@@ -5,14 +5,6 @@
 }
 
 :root {
-  [data-theme="light"]
-  {
-    --bg: #f1e1e1;
-  --panel: #f8f9fa;
-  --line: #e5e7eb;
-  --text: #1f2937;
-  --text-light: #6b7280;
-  }
     --bg: #121318;
     --panel: #1c1d24;
     --line: #2a2b31;
@@ -23,6 +15,14 @@
     --font: 'Inter', sans-serif;
     --max-width: 960px;
     --radius: 8px;
+}
+
+[data-theme="light"] {
+    --bg: #f1e1e1;
+    --panel: #f8f9fa;
+    --line: #e5e7eb;
+    --text: #1f2937;
+    --text-light: #6b7280;
 }
 
 body {
