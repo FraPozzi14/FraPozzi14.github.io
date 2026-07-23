@@ -6,18 +6,25 @@ layout: default
 
 - Francesco Pozzi, 17 anni.
 - Studente presso IISS Greppi. Indirizzo Tecnico Informatico.
-- Possessore di brevetto AB (tipo P), BLSD, HACCP.
+- Possessore di brevetto AB (tipo P), BLSD, HACCP
+
+--
 
 **Amante dello sport**
-- Nuoto Agonistico da 12 anni.
+- Ex Nuoto Agonistico.
 - Appassionato di sci (livello base)
+
+--
 
 **Per il sociale**
 - Animatore in oratorio
 - Socio Aggregato ANA
+  
+--
 
 **Uomo di mondo** 
-Paesi visitati
+
+Paesi visitati oltre all'Italia
 - Spagna
 - Germania
 - Canada
